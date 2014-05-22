@@ -1,18 +1,34 @@
 @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
+
+//=========================================================
+//login background
+//=========================================================
+#bg { position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
+
+//=========================================================
+//form error
+//=========================================================
 .error{
   display: inline-block;
   color: red;
   padding-bottom: 3%;
 }
 
-
+//=========================================================
+//login form page
+//=========================================================
 .login-body{
   position: absolute;
   top: 25%;
   left: 40%;
 }
+
+// login logo
 
 .login-header {
   div {
@@ -39,7 +55,7 @@
     //padding-bottom: 10%
   }
 
-  input[type=text] {
+  input[type=email] {
     width: 100%;
     height: 30px;
     background: transparent;
@@ -116,5 +132,66 @@
 
   ::-moz-input-placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+
+//=========================================================
+//menus toggle button
+//=========================================================
+.navicon-line {
+  width: 70%;
+  height: 4px;
+  border-radius: 1px;
+  margin-bottom: 3px;
+  background-color: dodgerblue;
+}
+
+.sb-toggle-left{
+  cursor: pointer;
+  width: 6%;
+  padding: 1%;
+  float: left;
+  height: 100%;
+  padding-top: 1.7%;
+  padding-left: 1.7%;
+}
+
+.menu-toggle-box-shadow{
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+
+nav{
+  background: rgba(76,76,76,1);
+  background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(19,19,19,1) 0%, rgba(43,43,43,1) 98%, rgba(28,28,28,1) 99%, rgba(17,17,17,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(0%, rgba(102,102,102,1)), color-stop(0%, rgba(44,44,44,1)), color-stop(0%, rgba(89,89,89,1)), color-stop(0%, rgba(71,71,71,1)), color-stop(0%, rgba(19,19,19,1)), color-stop(98%, rgba(43,43,43,1)), color-stop(99%, rgba(28,28,28,1)), color-stop(100%, rgba(17,17,17,1)));
+  background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(19,19,19,1) 0%, rgba(43,43,43,1) 98%, rgba(28,28,28,1) 99%, rgba(17,17,17,1) 100%);
+  background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(19,19,19,1) 0%, rgba(43,43,43,1) 98%, rgba(28,28,28,1) 99%, rgba(17,17,17,1) 100%);
+  background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(19,19,19,1) 0%, rgba(43,43,43,1) 98%, rgba(28,28,28,1) 99%, rgba(17,17,17,1) 100%);
+  background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(19,19,19,1) 0%, rgba(43,43,43,1) 98%, rgba(28,28,28,1) 99%, rgba(17,17,17,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#111111', GradientType=0 );
+
+  height: 4em;
+}
+
+//=========================================================
+//profile page logo
+//=========================================================
+.logo {
+  @include span(4);
+  padding-top: 0.7%;
+  div {
+    //float: left;
+    text-align: center;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 45px;
+    font-weight: 200;
+
+    span {
+      color: #5379fa !important;
+    }
   }
 }

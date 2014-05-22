@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-
+<img src="../img/login-cover.jpg" id="bg" alt="">
 <section class="login-body">
     <div class="login-header">
         <div>fo<span>to</span></div>
@@ -10,7 +10,7 @@
         <% Form::open(['route' => 'login']) %>
 
         <% Form::label('email') %>
-        <% Form::text('email', null, ['required']) %>
+        <% Form::email('email', null, ['required']) %>
         @if($errors->has('email'))
         <% $errors->first('email', '<span class="error">:message</span>') %>
         @endif
@@ -34,13 +34,3 @@
 </section>
 
 @stop
-
-<style>
-    html {
-        background: url(../img/login-cover.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-</style>
