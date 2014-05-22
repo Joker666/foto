@@ -5,6 +5,4 @@ composer.phar
 .env.php
 .DS_Store
 Thumbs.db
-gruntfile.js
-config.rb
 _ide_helper.php
