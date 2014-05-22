@@ -1,0 +1,26 @@
+$susy:(
+    columns: 24,
+    gutters: 1/4,
+    math: fluid,
+    output: float,
+    gutter-position: inside,
+);
+
+body{
+  @include container(100%);
+}
+.login-body {
+  @include span(6);
+}
+.login-form{
+  @include break;
+}
+$breakpoint-large-width: 1201px;
+
+$breakpoint-medium-width: 700px;
+
+$breakpoint-small-width: 480px;
+
+@include susy-breakpoint($breakpoint-small-width, 8){
+
+}

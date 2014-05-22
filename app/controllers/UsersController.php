@@ -10,7 +10,7 @@ class UsersController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('layouts.master');
+        return View::make('profile.index');
 	}
 
 	/**
@@ -19,9 +19,9 @@ class UsersController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function login()
 	{
-		//
+        return View::make('account.login');
 	}
 
 	/**
@@ -32,8 +32,36 @@ class UsersController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+        $validator = Validator::make(Input::all(), [
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+        if($validator->fails()){
+            return Redirect::route('login')
+                ->withErrors($validator)
+                ->withInput();
+        } else{
+            $remember = (Input::has('remember')) ? true : false;
+
+            if(Auth::attempt([
+                'email' => Input::get('email'),
+                'password' => Input::get('password'),
+                'active' => 1
+            ], $remember)){
+                return Redirect::route('home')
+                    ->with('successMessage', 'You are signed in');
+            } else{
+                return Redirect::route('login')
+                    ->with('noticeMessage', 'Please use email : john@doe.com | password : johndoe');
+            }
+        }
 	}
+
+    public function logOut(){
+        Auth::logout();
+        return Redirect::route('login')
+            ->with('noticeMessage', 'You are signed out');
+    }
 
 	/**
 	 * Display the specified resource.
