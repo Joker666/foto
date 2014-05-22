@@ -213,7 +213,7 @@ body:after {
   opacity: 0.6;
 }
 /* line 115, ../_/sass/_modules.scss */
-.login-form input[type=text]:focus {
+.login-form input[type=email]:focus {
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.9);
 }

@@ -11,7 +11,7 @@ class DatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
-        $this->cleanDatabase();
+        //$this->cleanDatabase();
 
 		Eloquent::unguard();
 
