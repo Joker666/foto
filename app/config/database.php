@@ -1,5 +1,22 @@
 <?php
 
+if (!function_exists('heroku_pgsql_database')) {
+    function heroku_pgsql_database()
+    {
+        if (!isset($_SERVER['DATABASE_URL'])) {
+            return array();
+        }
+        $config = parse_url($_SERVER['DATABASE_URL']);
+        return [
+            'username' => $config['user'],
+            'password' => $config['pass'],
+            'host' => $config['host'],
+            'port' => $config['port'],
+            'database' => starts_with($config['path'], '/') ? substr($config['path'], 1) : $config['path'],
+        ];
+    }
+}
+
 return array(
 
 	/*
@@ -26,7 +43,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'pgsql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -63,17 +80,15 @@ return array(
 			'prefix'    => '',
 		),
 
-		'pgsql' => array(
-			'driver'   => 'pgsql',
-			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
-			'charset'  => 'utf8',
-			'prefix'   => '',
-			'schema'   => 'public',
-		),
-
+        'pgsql' => array_merge(
+            array(
+                'driver' => 'pgsql',
+                'charset' => 'utf8',
+                'prefix' => '',
+                'schema' => 'public',
+            ),
+            heroku_pgsql_database()
+        ),
 		'sqlsrv' => array(
 			'driver'   => 'sqlsrv',
 			'host'     => 'localhost',
