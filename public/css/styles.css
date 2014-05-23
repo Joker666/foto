@@ -237,7 +237,7 @@ body:after {
 
 /* line 142, ../_/sass/_modules.scss */
 .navicon-line {
-  width: 70%;
+  width: 30px;
   height: 4px;
   border-radius: 1px;
   margin-bottom: 3px;
@@ -247,12 +247,12 @@ body:after {
 /* line 150, ../_/sass/_modules.scss */
 .sb-toggle-left {
   cursor: pointer;
-  width: 6%;
+  width: 80px;
   padding: 1%;
   float: left;
   height: 100%;
-  padding-top: 1.7%;
-  padding-left: 1.7%;
+  padding-top: 22px;
+  padding-left: 24px;
 }
 
 /* line 160, ../_/sass/_modules.scss */
@@ -284,7 +284,7 @@ nav {
   float: left;
   padding-left: 0.41667%;
   padding-right: 0.41667%;
-  padding-top: 0.7%;
+  padding-top: 9px;
 }
 /* line 185, ../_/sass/_modules.scss */
 .logo div {
@@ -297,4 +297,84 @@ nav {
 /* line 193, ../_/sass/_modules.scss */
 .logo div span {
   color: #5379fa !important;
+}
+
+/* line 204, ../_/sass/_modules.scss */
+.sb-menu li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 210, ../_/sass/_modules.scss */
+.sb-menu li a {
+  border-left: 3px solid transparent;
+  width: 100%;
+  display: inline-block;
+  padding: 1em;
+  color: #f2f2f2;
+  text-decoration: none;
+  background: transparent;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+}
+/* line 221, ../_/sass/_modules.scss */
+.sb-menu li a:hover {
+  border-left: 3px solid dodgerblue;
+  background: #3c3c3c;
+}
+/* line 225, ../_/sass/_modules.scss */
+.sb-menu li a span.sb-caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  margin: 0 5px;
+  border: 5px solid transparent;
+  background: #f2f2f2;
+}
+/* line 233, ../_/sass/_modules.scss */
+.sb-menu li a .sb-submenu-active > span.sb-caret {
+  border-top: 0px solid transparent;
+  border-bottom: 5px solid;
+}
+/* line 238, ../_/sass/_modules.scss */
+.sb-menu li small {
+  display: inline-block;
+  padding: 14px;
+  color: #f2f2f2;
+}
+/* line 243, ../_/sass/_modules.scss */
+.sb-menu li .sb-open-right {
+  display: inline-block;
+  padding: 14px;
+  cursor: pointer;
+  color: #f2f2f2;
+}
+/* line 249, ../_/sass/_modules.scss */
+.sb-menu li ul.sb-submenu {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+/* line 255, ../_/sass/_modules.scss */
+.sb-menu li ul.sb-submenu li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 261, ../_/sass/_modules.scss */
+.sb-menu li ul.sb-submenu li a {
+  border-left: 3px solid transparent;
+  width: 100%;
+  display: inline-block;
+  padding: 1em;
+  color: #f2f2f2;
+  text-decoration: none;
+  background: transparent;
 }

@@ -12,6 +12,18 @@
             mySlidebars.toggle('right');
             $('div.navbar-left').toggleClass('menu-toggle-box-shadow');
         });
+        // Slidebars Submenus
+        $('.sb-toggle-submenu').off('click').on('click', function() {
+            $submenu = $(this).parent().children('.sb-submenu');
+            $(this).add($submenu).toggleClass('sb-submenu-active'); // Toggle active class.
+
+            if ($submenu.hasClass('sb-submenu-active')) {
+                $submenu.slideDown(200);
+            } else {
+                $submenu.slideUp(200);
+            }
+        });
+
         //$('.sb-toggle-left').click(mySlidebars.close);
     });
 }) (jQuery);

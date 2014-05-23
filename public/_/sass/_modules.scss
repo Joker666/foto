@@ -140,7 +140,7 @@
 //menus toggle button
 //=========================================================
 .navicon-line {
-  width: 70%;
+  width: 30px;
   height: 4px;
   border-radius: 1px;
   margin-bottom: 3px;
@@ -149,12 +149,12 @@
 
 .sb-toggle-left{
   cursor: pointer;
-  width: 6%;
+  width: 80px;
   padding: 1%;
   float: left;
   height: 100%;
-  padding-top: 1.7%;
-  padding-left: 1.7%;
+  padding-top: 22px;
+  padding-left: 24px;
 }
 
 .menu-toggle-box-shadow{
@@ -181,7 +181,7 @@ nav{
 //=========================================================
 .logo {
   @include span(4);
-  padding-top: 0.7%;
+  padding-top: 9px;
   div {
     //float: left;
     text-align: center;
@@ -192,6 +192,81 @@ nav{
 
     span {
       color: #5379fa !important;
+    }
+  }
+}
+
+
+//=========================================================
+//sidebar menu
+//=========================================================
+
+.sb-menu li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  a{
+    border-left: 3px solid transparent;
+    width: 100%;
+    display: inline-block;
+    padding: 1em;
+    color: #f2f2f2;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    &:hover{
+      border-left: 3px solid dodgerblue;
+      background: lighten(#222222, 10%);
+    }
+    span.sb-caret {
+      width: 0;
+      height: 0;
+      display: inline-block;
+      margin: 0 5px;
+      border: 5px solid transparent;
+      background: #f2f2f2;
+    }
+    .sb-submenu-active > span.sb-caret {
+      border-top: 0px solid transparent;
+      border-bottom: 5px solid;
+    }
+  }
+  small{
+    display: inline-block;
+    padding: 14px;
+    color: #f2f2f2;
+  }
+  .sb-open-right{
+    display: inline-block;
+    padding: 14px;
+    cursor: pointer;
+    color: #f2f2f2;
+  }
+  ul.sb-submenu {
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    li {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      a{
+        border-left: 3px solid transparent;
+        width: 100%;
+        display: inline-block;
+        padding: 1em;
+        color: #f2f2f2;
+        text-decoration: none;
+        background: transparent;
+      }
     }
   }
 }
