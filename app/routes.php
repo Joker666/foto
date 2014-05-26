@@ -17,14 +17,18 @@ Blade::setContentTags('<%', '%>'); 		// for variables and all things Blade
 Blade::setEscapedContentTags('<%%', '%%>'); 	// for escaped data
 
 
+//Event::listen('illuminate.query', function($sql){
+//   var_dump($sql);
+//});
+
 Route::get('/login', [
     'as' => 'login',
-    'uses' => 'UsersController@login'
+    'uses' => 'UsersController@getLogin'
 ]);
 
 Route::post('/login', [
     'as' => 'login',
-    'uses' => 'UsersController@store'
+    'uses' => 'UsersController@login'
 ]);
 
 Route::get('/', function(){
@@ -37,11 +41,18 @@ Route::group(['before' => 'auth'], function () {
 
     Route::get('/home', [
         'as' => 'home',
-        'uses' => 'UsersController@index'
+        'uses' => 'ProfilesController@index'
     ]);
 
     Route::get('/logout', [
         'as' => 'logout',
         'uses' => 'UsersController@logOut'
+    ]);
+
+    Route::get('upload', 'ProfilesController@getUpload');
+
+    Route::post('upload/{userID}', [
+        'as' => 'upload',
+        'uses' => 'ProfilesController@upload'
     ]);
 });

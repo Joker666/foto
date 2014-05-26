@@ -162,7 +162,9 @@
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow:         inset 0 0 10px #000000;
 }
-
+//=========================================================
+//navbar
+//=========================================================
 nav{
   background: rgba(76,76,76,1);
   background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(19,19,19,1) 0%, rgba(43,43,43,1) 98%, rgba(28,28,28,1) 99%, rgba(17,17,17,1) 100%);
@@ -175,7 +177,23 @@ nav{
 
   height: 4em;
 }
-
+.nav-shadow{
+  -webkit-box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.75);
+}
+.navbar-fixed {
+  position: fixed;
+  left: auto;
+  right: auto;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+nav:before, nav:after {
+  content: " ";
+  display: table;
+}
 //=========================================================
 //profile page logo
 //=========================================================
@@ -246,6 +264,9 @@ nav{
     cursor: pointer;
     color: #f2f2f2;
   }
+
+  //submenu
+
   ul.sb-submenu {
     display: none;
     padding: 0;
@@ -269,4 +290,63 @@ nav{
       }
     }
   }
+}
+//=========================================================
+//upload icon
+//=========================================================
+#upload-icon-link{
+  width: 50px;
+  margin-left: span(6 wide);
+}
+#upload-icon{
+  width: 50px;
+  //@include span(isolate 60px at 25%);
+  //width: span(1);
+  //margin-right: span(1) + 25%;
+  padding-top: 5px;
+  transition: all 0.3s ease;
+  &:hover{
+    transform: translate(0px, 3px);
+    -webkit-transform: translate(0px, 3px);
+    -moz-transform: translate(0px, 3px);
+    -o-transform: translate(0px, 3px);
+    -ms-transform: translate(0px, 3px);
+  }
+}
+//=========================================================
+//modal
+//=========================================================
+.modal-example-content {
+  width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background-color: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: 0 none;
+}
+
+.modal-example-header {
+  border-bottom: 1px solid #E5E5E5;
+  padding: 15px;
+}
+.modal-example-body p,
+.modal-example-header h4 {
+  margin: 0;
+}
+.modal-example-body {
+  padding: 20px;
+}
+
+#close-modal{
+  float: right;
+}
+//=========================================================
+//dropzone.js
+//=========================================================
+.dz-preview{
+  width: 120px;
+}
+
+#sb-site {
+  padding: 80px 0 30px 0;
 }

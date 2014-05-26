@@ -17,7 +17,11 @@
     <% HTML::script('_/js/script.js') %>
 </head>
 <body>
+@include('profile.partials.nav')
+<div id="sb-site">
     @yield('content')
+</div>
+@include('profile.partials.sidebar')
 </body>
 <script>
     function createToast(){

@@ -15,6 +15,11 @@ class CreatePhotosTable extends Migration {
 		Schema::create('photos', function(Blueprint $table)
 		{
 			$table->increments('id');
+            $table->integer('user_id')->unsigned()->index();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->string('title')->nullable();
+            $table->string('image');
+            $table->boolean('public')->default(1);
 			$table->timestamps();
 		});
 	}

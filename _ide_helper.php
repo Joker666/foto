@@ -1141,7 +1141,7 @@ namespace {
 		 *
 		 * @param InputInterface  $input  An Input instance
 		 * @param OutputInterface $output An Output instance
-		 * @return int     0 if everything went fine, or an error code
+		 * @return int 0 if everything went fine, or an error code
 		 * @throws \Exception When doRun returns Exception
 		 * @api 
 		 * @static 
@@ -1156,7 +1156,7 @@ namespace {
 		 *
 		 * @param InputInterface  $input  An Input instance
 		 * @param OutputInterface $output An Output instance
-		 * @return int     0 if everything went fine, or an error code
+		 * @return int 0 if everything went fine, or an error code
 		 * @static 
 		 */
 		 public static function doRun($input, $output){
@@ -1225,7 +1225,7 @@ namespace {
 		/**
 		 * Sets whether to catch exceptions or not during commands execution.
 		 *
-		 * @param bool    $boolean Whether to catch exceptions or not during commands execution
+		 * @param bool $boolean Whether to catch exceptions or not during commands execution
 		 * @api 
 		 * @static 
 		 */
@@ -1337,7 +1337,7 @@ namespace {
 		 * Returns true if the command exists, false otherwise.
 		 *
 		 * @param string $name The command name or alias
-		 * @return bool    true if the command exists, false otherwise
+		 * @return bool true if the command exists, false otherwise
 		 * @api 
 		 * @static 
 		 */
@@ -1419,8 +1419,8 @@ namespace {
 		/**
 		 * Returns a text representation of the Application.
 		 *
-		 * @param string  $namespace An optional namespace name
-		 * @param bool    $raw       Whether to return raw command list
+		 * @param string $namespace An optional namespace name
+		 * @param bool   $raw       Whether to return raw command list
 		 * @return string A string representing the Application
 		 * @deprecated Deprecated since version 2.3, to be removed in 3.0.
 		 * @static 
@@ -1433,8 +1433,8 @@ namespace {
 		/**
 		 * Returns an XML representation of the Application.
 		 *
-		 * @param string  $namespace An optional namespace name
-		 * @param bool    $asDom     Whether to return a DOM or an XML string
+		 * @param string $namespace An optional namespace name
+		 * @param bool   $asDom     Whether to return a DOM or an XML string
 		 * @return string|\DOMDocument An XML string representing the Application
 		 * @deprecated Deprecated since version 2.3, to be removed in 3.0.
 		 * @static 
@@ -12677,6 +12677,60 @@ namespace {
 		 public static function getNames(){
 			//Method inherited from \Illuminate\View\Environment
 			return \Illuminate\View\Environment::getNames();
+		 }
+
+	}
+	class Image extends \Intervention\Image\Facades\Image{
+		/**
+		 * Creates new instance of Image Manager
+		 *
+		 * @param Illuminate\Config\Repository $config
+		 * @static 
+		 */
+		 public static function __construct($config = null){
+			//Method inherited from \Intervention\Image\ImageManager
+			 \Intervention\Image\ImageManager::__construct($config);
+		 }
+
+		/**
+		 * Initiates an Image instance from different input types
+		 *
+		 * @param mixed $data
+		 * @return Intervention\Image\Image
+		 * @static 
+		 */
+		 public static function make($data){
+			//Method inherited from \Intervention\Image\ImageManager
+			return \Intervention\Image\ImageManager::make($data);
+		 }
+
+		/**
+		 * Creates an empty image canvas
+		 *
+		 * @param integer $width
+		 * @param integer $height
+		 * @param mixed $background
+		 * @return Intervention\Image\Image
+		 * @static 
+		 */
+		 public static function canvas($width, $height, $background = null){
+			//Method inherited from \Intervention\Image\ImageManager
+			return \Intervention\Image\ImageManager::canvas($width, $height, $background);
+		 }
+
+		/**
+		 * Create new cached image and run callback
+		 * (requires additional package intervention/imagecache)
+		 *
+		 * @param Closure $callback
+		 * @param integer $lifetime
+		 * @param boolean $returnObj
+		 * @return Image
+		 * @static 
+		 */
+		 public static function cache($callback, $lifetime = null, $returnObj = false){
+			//Method inherited from \Intervention\Image\ImageManager
+			return \Intervention\Image\ImageManager::cache($callback, $lifetime, $returnObj);
 		 }
 
 	}

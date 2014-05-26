@@ -10,7 +10,7 @@ class UsersController extends \BaseController {
 	 */
 	public function index()
 	{
-        return View::make('profile.index');
+
 	}
 
 	/**
@@ -19,7 +19,7 @@ class UsersController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function login()
+	public function getLogin()
 	{
         return View::make('account.login');
 	}
@@ -30,7 +30,7 @@ class UsersController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function login()
 	{
         $validator = Validator::make(Input::all(), [
             'email' => 'required|email',
