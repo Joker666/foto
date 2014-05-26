@@ -1,60 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c81ba7ac-c5fb-4ad5-8253-fec200cea0d4" name="Default" comment="Sidebar">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/2014-05-26-17-46-21-Apple-iPhone-5s.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/thumbnails/2014-05-26-17-46-21-Apple-iPhone-5s.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/2014-05-26-17-46-22-HP-Pavilion-500-Desktop-PC_Right-Facing_NDA-May-23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/thumbnails/2014-05-26-17-46-22-HP-Pavilion-500-Desktop-PC_Right-Facing_NDA-May-23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/2014-05-26-17-46-22-Lenovo_Yoga_13_flipping.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/thumbnails/2014-05-26-17-46-22-Lenovo_Yoga_13_flipping.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/2014-05-26-17-46-22-Twitter   Hasan___Rafi   atMattb  taylorotwell Yep  ....png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/thumbnails/2014-05-26-17-46-22-Twitter   Hasan___Rafi   atMattb  taylorotwell Yep  ....png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/2014-05-26-17-46-22-Whoops  There was an error..png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/thumbnails/2014-05-26-17-46-22-Whoops  There was an error..png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/2014-05-26-17-46-22-laptop-repair.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/thumbnails/2014-05-26-17-46-22-laptop-repair.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/2014-05-26-17-46-22-tablets.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/john/thumbnails/2014-05-26-17-46-22-tablets.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/spritemap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/spritemap@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Photo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/ProfilesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/packages/intervention/image/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/dropzone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/dropzone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery-2.1.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/jquery.custombox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.custombox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/jquery.toast.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.toast.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profile/main.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profile/partials/nav.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/slidebars.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/slidebars.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profile/upload.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/jquery.toast.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/slidebars.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/jquery-2.1.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/jquery.toast.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/slidebars.min.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/profile/index.blade.php" afterPath="$PROJECT_DIR$/app/views/profile/partials/sidebar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/.sass-cache/9621569251d6e824043d8ebcd6cde409a6d12894/_modules.scssc" afterPath="$PROJECT_DIR$/Grunt/.sass-cache/9621569251d6e824043d8ebcd6cde409a6d12894/_modules.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_05_21_122739_create_photos_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_05_21_122739_create_photos_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/User.php" afterPath="$PROJECT_DIR$/app/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UsersController.php" afterPath="$PROJECT_DIR$/app/controllers/UsersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_ide_helper.php" afterPath="$PROJECT_DIR$/_ide_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/_/sass/_modules.scss" afterPath="$PROJECT_DIR$/public/_/sass/_modules.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profile/index.blade.php" afterPath="$PROJECT_DIR$/app/views/profile/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/master.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/_/js/script.js" afterPath="$PROJECT_DIR$/public/_/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/script.js" afterPath="$PROJECT_DIR$/public/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/styles.css" afterPath="$PROJECT_DIR$/public/css/styles.css" />
+    <list default="true" id="c81ba7ac-c5fb-4ad5-8253-fec200cea0d4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="3622b12f-974a-43b4-aa69-8894d08cd6fc" name="Exclude" comment="Excluding directories" />
@@ -628,16 +575,23 @@
       <option name="project" value="LOCAL" />
       <updated>1400826830698</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Navbar fixed working!">
+      <created>1401135994346</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1401135994346</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1425" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32795697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24365872" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -647,7 +601,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -679,7 +632,8 @@
     <MESSAGE value="Grunt added 2" />
     <MESSAGE value="Grunt added 3" />
     <MESSAGE value="Sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sidebar" />
+    <MESSAGE value="Navbar fixed working!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navbar fixed working!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -921,6 +875,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3870" max-vertical-offset="7326">
           <caret line="69" column="81" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="81" />
+          <folding />
         </state>
       </provider>
     </entry>
