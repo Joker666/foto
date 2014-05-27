@@ -4,5 +4,6 @@
 <section class="under-nav">
 <% Form::open(['method' => 'POST', 'route' => ['upload', Auth::user()->id],
                'id' => 'my-awesome-dropzone', 'class' => 'dropzone']) %>
+<% Form::close() %>
 </section>
 @stop

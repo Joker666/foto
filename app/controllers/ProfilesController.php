@@ -45,10 +45,12 @@ class ProfilesController extends \BaseController {
         $filename = date('Y-m-d-H-i-s-') . $image->getClientOriginalName();
         //make new directory for storing images intervention fault -_-
         if(!is_dir($destinationPath)){
-            mkdir($destinationPath, 0777, true);
+            File::makeDirectory($destinationPath, 0777, true);
+            //mkdir($destinationPath, 0777, true);
         }
         if(!is_dir($thumbnailPath)){
-            mkdir($destinationPath. '/thumbnails/', 0777, true);
+            File::makeDirectory($thumbnailPath, 0777, true);
+            //mkdir($destinationPath. '/thumbnails/', 0777, true);
         }
         //Thumbnail Generation
         Image::make($image->getRealPath())
@@ -115,7 +117,19 @@ class ProfilesController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+        $upload_dir = public_path().'/uploads/' . Auth::user()->username . '/';
+        $thumbnail_dir = public_path().'/uploads/' . Auth::user()->username . '/thumbnails/';
+		$photo = Photo::find($id);
+        File::delete($upload_dir . $photo->image);
+        File::delete($thumbnail_dir . $photo->image);
+        if (count(glob($thumbnail_dir . '*')) === 0 ) {
+            File::deleteDirectory($thumbnail_dir);
+        }
+        if (count(glob($upload_dir . '*')) === 0 ) {
+            File::deleteDirectory($upload_dir);
+        }
+        $photo->delete();
+        return Redirect::back();
 	}
 
 }

@@ -8,12 +8,21 @@
     <% HTML::style('css/slidebars.css') %>
     <% HTML::style('css/jquery.custombox.css') %>
     <% HTML::style('css/dropzone.css') %>
+    <% HTML::style('css/jquery.fancybox.css') %>
+    <% HTML::style('css/jquery.fancybox-buttons.css') %>
+    <% HTML::style('css/jquery.fancybox-thumbs.css') %>
     <% HTML::style('css/styles.css') %>
     <% HTML::script('js/jquery-2.1.1.js') %>
     <% HTML::script('js/jquery.toast.js') %>
     <% HTML::script('js/jquery.custombox.js') %>
     <% HTML::script('js/slidebars.js') %>
     <% HTML::script('js/dropzone.js') %>
+    <% HTML::script('js/jquery.mousewheel.js') %>
+    <% HTML::script('js/jquery.easing.1.3.js') %>
+    <% HTML::script('js/jquery.fancybox.js') %>
+    <% HTML::script('js/jquery.fancybox-buttons.js') %>
+    <% HTML::script('js/jquery.fancybox-media.js') %>
+    <% HTML::script('js/jquery.fancybox-thumbs.js') %>
     <% HTML::script('_/js/script.js') %>
 </head>
 <body>

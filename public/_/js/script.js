@@ -34,7 +34,32 @@
             }
         });
 
+        //Fancybox
 
+        $(".fancybox").fancybox({
+            hideOnContentClick: true,
+            padding: 0,
+
+            openEffect : 'elastic',
+            openSpeed  : 150,
+
+            closeEffect : 'elastic',
+            closeSpeed  : 150,
+
+            closeClick : true,
+
+            helpers : {
+                overlay : null,
+                buttons	: {},
+//                thumbs : {
+//                    width  : 50,
+//                    height : 50
+//                }
+            }
+        });
+
+
+        //nav shadow
         $(window).scroll(function () {
 
             console.log($(window).scrollTop())
@@ -46,13 +71,19 @@
             }
         });
 
-//        $('#upload-icon').on('click', function ( e ) {
-//            $.fn.custombox( this, {
-//                url: '#modal',
-//                effect: 'sign'
-//            });
-//            e.preventDefault();
-//        });
+
+        //Custombox for deleting a photo
+        $('.deletePhoto').on('click', function ( e ) {
+            if ($('a[data-method]').length > 0) {
+                var action = $(this).attr('href');
+                $('#modalDeletePhoto').attr('action', action);
+            }
+            $.fn.custombox( this, {
+                url: '#promtModal',
+                effect: 'sign'
+            });
+            e.preventDefault();
+        });
     });
 }) (jQuery);
 

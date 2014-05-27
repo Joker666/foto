@@ -55,4 +55,9 @@ Route::group(['before' => 'auth'], function () {
         'as' => 'upload',
         'uses' => 'ProfilesController@upload'
     ]);
+
+    Route::delete('photo/delete/{id}', [
+        'as' => 'deletePhoto',
+        'uses' => 'ProfilesController@destroy'
+    ]);
 });

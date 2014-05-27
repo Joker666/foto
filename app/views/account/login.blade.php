@@ -28,7 +28,7 @@
             </label>
         </div>
 
-        <% Form::submit('Login', ['class' => 'btn btn-submit']) %>
+        <% Form::submit('Login') %>
         <% Form::close() %>
     </section>
 </section>

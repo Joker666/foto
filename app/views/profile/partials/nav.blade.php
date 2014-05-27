@@ -1,15 +1,13 @@
-<div id="modal" style="display: none;" class="modal-example-content">
+<div id="promtModal" style="display: none;" class="modal-example-content">
     <div class="modal-example-header">
         <button id='close-modal' type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
-        <h4>jQuery Custombox</h4>
+        <h4>Do you want to delete this photo</h4>
     </div>
     <div class="modal-example-body">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <% Form::open(['method' => 'delete', 'id' => 'modalDeletePhoto']) %>
+        <% Form::submit('Yes', ['class' => 'btn btn-left']) %>
+        <% Form::close() %>
+        <a href="#" class="btn btn-right" onclick="$.fn.custombox('close');">No</a>
     </div>
 </div>
 <nav class="navbar-fixed sb-slide">

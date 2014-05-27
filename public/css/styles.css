@@ -425,7 +425,7 @@ nav:before, nav:after {
 
 /* line 319, ../_/sass/_modules.scss */
 .modal-example-content {
-  width: 600px;
+  width: 120%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   background-color: #FFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -433,34 +433,74 @@ nav:before, nav:after {
   outline: 0 none;
 }
 
-/* line 328, ../_/sass/_modules.scss */
+/* line 329, ../_/sass/_modules.scss */
 .modal-example-header {
-  border-bottom: 1px solid #E5E5E5;
   padding: 15px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 500;
 }
 
-/* line 332, ../_/sass/_modules.scss */
+/* line 335, ../_/sass/_modules.scss */
 .modal-example-body p,
 .modal-example-header h4 {
   margin: 0;
 }
 
-/* line 336, ../_/sass/_modules.scss */
+/* line 339, ../_/sass/_modules.scss */
 .modal-example-body {
   padding: 20px;
+  margin-bottom: 10%;
 }
 
-/* line 340, ../_/sass/_modules.scss */
+/* line 344, ../_/sass/_modules.scss */
 #close-modal {
   float: right;
 }
 
-/* line 346, ../_/sass/_modules.scss */
+/* line 350, ../_/sass/_modules.scss */
 .dz-preview {
   width: 120px;
 }
 
-/* line 350, ../_/sass/_modules.scss */
+/* line 356, ../_/sass/_modules.scss */
 #sb-site {
   padding: 80px 0 30px 0;
+}
+
+/* line 370, ../_/sass/_modules.scss */
+.btn {
+  background: dodgerblue;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: 'Exo', sans-serif;
+  font-weight: 200;
+  border-radius: .3em;
+  transition: all 0.3s ease;
+  margin: 0.09em;
+  border: 3px solid lightgrey;
+}
+/* line 382, ../_/sass/_modules.scss */
+.btn:hover {
+  background: white;
+  color: dodgerblue;
+  border: 4px solid dodgerblue;
+}
+
+/* line 388, ../_/sass/_modules.scss */
+.btn-left {
+  float: left;
+  margin-left: 10%;
+  margin-top: -2%;
+  padding: 0.16em 0.73em 0.16em 0.73em;
+  cursor: pointer;
+}
+
+/* line 395, ../_/sass/_modules.scss */
+.btn-right {
+  float: right;
+  margin-right: 10%;
+  margin-top: -2%;
+  padding: 0.3em 0.9em 0.3em 0.9em;
 }
