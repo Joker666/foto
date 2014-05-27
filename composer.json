@@ -4,6 +4,7 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
+        "ext-gd": "*",
 		"laravel/framework": "4.1.25",
 		"intervention/image" : "dev-master",
 		"way/generators": "dev-master",

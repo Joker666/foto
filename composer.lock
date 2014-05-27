@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b0171e9ca9cfa4865dc0470d696613f6",
+    "hash": "f1780afede559bf90e2f448d742f77ad",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -773,12 +773,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Intervention/image.git",
-                "reference": "e6fb391319683a832e537798036fc15bb69d3785"
+                "reference": "e0d9c258ce990c459eb13873ca3b8b92eb11268e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/image/zipball/e6fb391319683a832e537798036fc15bb69d3785",
-                "reference": "e6fb391319683a832e537798036fc15bb69d3785",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/e0d9c258ce990c459eb13873ca3b8b92eb11268e",
+                "reference": "e0d9c258ce990c459eb13873ca3b8b92eb11268e",
                 "shasum": ""
             },
             "require": {
@@ -823,7 +823,7 @@
                 "thumbnail",
                 "watermark"
             ],
-            "time": "2014-05-25 19:00:00"
+            "time": "2014-05-27 15:56:55"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -2452,12 +2452,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JeffreyWay/Laravel-4-Generators.git",
-                "reference": "1d7c9338d363899e17c13e7365a3a1c45ca13e8b"
+                "reference": "484d379c6bc1d38c75e4f52f74efcbcd11f7dd2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/1d7c9338d363899e17c13e7365a3a1c45ca13e8b",
-                "reference": "1d7c9338d363899e17c13e7365a3a1c45ca13e8b",
+                "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/484d379c6bc1d38c75e4f52f74efcbcd11f7dd2c",
+                "reference": "484d379c6bc1d38c75e4f52f74efcbcd11f7dd2c",
                 "shasum": ""
             },
             "require": {
@@ -2492,7 +2492,7 @@
                 }
             ],
             "description": "Rapidly generate resources, migrations, models, and much more.",
-            "time": "2014-04-28 21:58:48"
+            "time": "2014-05-27 14:21:26"
         }
     ],
     "packages-dev": [
@@ -2506,9 +2506,9 @@
         "intervention/image": 20,
         "way/generators": 20
     },
-    "platform": [
-
-    ],
+    "platform": {
+        "ext-gd": "*"
+    },
     "platform-dev": [
 
     ]
