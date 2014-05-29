@@ -72,6 +72,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
 }
 
+/* line 3, ../_/sass/_base.scss */
+body {
+  font-family: 'Exo', sans-serif;
+  font-size: 1.1em;
+}
+
 /* line 9, ../_/sass/_layout.scss */
 body {
   max-width: 100%;
@@ -272,7 +278,7 @@ nav {
   background: -ms-linear-gradient(top, #4c4c4c 0%, #666666 0%, #2c2c2c 0%, #595959 0%, #474747 0%, #131313 0%, #2b2b2b 98%, #1c1c1c 99%, #111111 100%);
   background: linear-gradient(to bottom, #4c4c4c 0%, #666666 0%, #2c2c2c 0%, #595959 0%, #474747 0%, #131313 0%, #2b2b2b 98%, #1c1c1c 99%, #111111 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#111111', GradientType=0 );
-  height: 4em;
+  height: 3.7em;
 }
 
 /* line 180, ../_/sass/_modules.scss */
@@ -436,71 +442,78 @@ nav:before, nav:after {
 /* line 329, ../_/sass/_modules.scss */
 .modal-example-header {
   padding: 15px;
-  font-family: 'Exo', sans-serif;
   font-weight: 500;
 }
 
-/* line 335, ../_/sass/_modules.scss */
+/* line 334, ../_/sass/_modules.scss */
 .modal-example-body p,
 .modal-example-header h4 {
   margin: 0;
 }
 
-/* line 339, ../_/sass/_modules.scss */
+/* line 338, ../_/sass/_modules.scss */
 .modal-example-body {
   padding: 20px;
   margin-bottom: 10%;
 }
 
-/* line 344, ../_/sass/_modules.scss */
+/* line 343, ../_/sass/_modules.scss */
 #close-modal {
   float: right;
 }
 
-/* line 350, ../_/sass/_modules.scss */
+/* line 349, ../_/sass/_modules.scss */
 .dz-preview {
   width: 120px;
 }
 
-/* line 356, ../_/sass/_modules.scss */
+/* line 355, ../_/sass/_modules.scss */
 #sb-site {
   padding: 80px 0 30px 0;
 }
 
-/* line 370, ../_/sass/_modules.scss */
+/* line 360, ../_/sass/_modules.scss */
 .btn {
   background: dodgerblue;
   font-size: 1.5em;
   text-decoration: none;
   text-align: center;
   color: white;
-  font-family: 'Exo', sans-serif;
   font-weight: 200;
   border-radius: .3em;
   transition: all 0.3s ease;
   margin: 0.09em;
   border: 3px solid lightgrey;
 }
-/* line 382, ../_/sass/_modules.scss */
+/* line 371, ../_/sass/_modules.scss */
 .btn:hover {
   background: white;
   color: dodgerblue;
   border: 4px solid dodgerblue;
-}
-
-/* line 388, ../_/sass/_modules.scss */
-.btn-left {
-  float: left;
-  margin-left: 10%;
-  margin-top: -2%;
-  padding: 0.16em 0.73em 0.16em 0.73em;
   cursor: pointer;
 }
 
-/* line 395, ../_/sass/_modules.scss */
+/* line 378, ../_/sass/_modules.scss */
+.btn-left {
+  font-family: 'Exo', sans-serif;
+  float: left;
+  margin-left: 10%;
+  margin-top: -2%;
+  height: 95%;
+  padding: 0.13em 0.73em;
+}
+
+/* line 386, ../_/sass/_modules.scss */
 .btn-right {
   float: right;
   margin-right: 10%;
   margin-top: -2%;
-  padding: 0.3em 0.9em 0.3em 0.9em;
+  padding: 0.35em 0.95em;
+}
+
+/* line 392, ../_/sass/_modules.scss */
+.btn-center {
+  font-family: 'Exo', sans-serif;
+  margin-left: 37.5%;
+  margin-right: 37.5%;
 }

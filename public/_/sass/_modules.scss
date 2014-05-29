@@ -175,7 +175,7 @@ nav{
   background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(19,19,19,1) 0%, rgba(43,43,43,1) 98%, rgba(28,28,28,1) 99%, rgba(17,17,17,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#111111', GradientType=0 );
 
-  height: 4em;
+  height: 3.7em;
 }
 .nav-shadow{
   -webkit-box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.75);
@@ -329,7 +329,6 @@ nav:before, nav:after {
 .modal-example-header {
   //border-bottom: 1px solid #E5E5E5;
   padding: 15px;
-  font-family: 'Exo', sans-serif;
   font-weight: 500;
 }
 .modal-example-body p,
@@ -357,15 +356,6 @@ nav:before, nav:after {
   padding: 80px 0 30px 0;
 }
 
-
-
-
-
-
-
-
-
-
 //button
 .btn{
   background: dodgerblue;
@@ -373,7 +363,6 @@ nav:before, nav:after {
   text-decoration: none;
   text-align: center;
   color: white;
-  font-family: 'Exo', sans-serif;
   font-weight: 200;
   border-radius: .3em;
   transition: all 0.3s ease;
@@ -383,18 +372,26 @@ nav:before, nav:after {
     background: white;
     color: dodgerblue;
     border: 4px solid dodgerblue;
+    cursor: pointer;
   }
 }
 .btn-left{
+  font-family: 'Exo', sans-serif;
   float: left;
   margin-left: 10%;
   margin-top: -2%;
-  padding: 0.16em 0.73em 0.16em 0.73em;
-  cursor: pointer;
+  height: 95%;
+  padding: 0.13em 0.73em;
 }
 .btn-right{
   float: right;
   margin-right: 10%;
   margin-top: -2%;
-  padding: 0.3em 0.9em 0.3em 0.9em;
+  padding: 0.35em 0.95em;
+}
+.btn-center{
+  font-family: 'Exo', sans-serif;
+  margin-left: span(9 wide);
+  margin-right: span(9 wide);
+  //opacity: 0;
 }

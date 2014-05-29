@@ -1,13 +1,14 @@
 /**
  * Created by joker on 5/21/14.
  */
-//slidebar
 
 
 (function($) {
     $(document).ready(function() {
 
-        //Toggle Slidebar
+        //============================================
+        //Toggle Slidebar  &&  Toggle menu toggle box shadow class
+        //============================================
         var mySlidebars = new $.slidebars();
         $slidebar = $('div.sb-slidebar');
         $('.sb-toggle-left').on('click', function() {
@@ -16,13 +17,18 @@
             mySlidebars.toggle('right');
         });
 
-        //Toggle menu toggle box shadow class
+        //============================================
+        //Remove menu toggle box shadow class
+        //============================================
         var $site = $('#sb-site, .sb-site');
         $site.on('touchend click', function(event) {
                 $('div.navbar-left').removeClass('menu-toggle-box-shadow');
         });
 
+
+        //============================================
         // Slidebars Submenus
+        //============================================
         $('.sb-toggle-submenu').off('click').on('click', function() {
             $submenu = $(this).parent().children('.sb-submenu');
             $(this).add($submenu).toggleClass('sb-submenu-active'); // Toggle active class.
@@ -34,8 +40,9 @@
             }
         });
 
+        //============================================
         //Fancybox
-
+        //============================================
         $(".fancybox").fancybox({
             hideOnContentClick: true,
             padding: 0,
@@ -50,7 +57,7 @@
 
             helpers : {
                 overlay : null,
-                buttons	: {},
+                buttons	: {}
 //                thumbs : {
 //                    width  : 50,
 //                    height : 50
@@ -58,8 +65,9 @@
             }
         });
 
-
+        //============================================
         //nav shadow
+        //============================================
         $(window).scroll(function () {
 
             console.log($(window).scrollTop())
@@ -71,8 +79,9 @@
             }
         });
 
-
+        //============================================
         //Custombox for deleting a photo
+        //============================================
         $('.deletePhoto').on('click', function ( e ) {
             if ($('a[data-method]').length > 0) {
                 var action = $(this).attr('href');
@@ -84,11 +93,44 @@
             });
             e.preventDefault();
         });
+
+        //============================================
+        //Initialize Dropzone && show/hide start-upload button
+        //============================================
+        var myDropzone = new Dropzone('#my-awesome-dropzone');
+        if(!$('#my-awesome-dropzone').hasClass('dz-started')){
+            $('.under-nav button').hide();
+        }
+        myDropzone.on("addedfile", function(file) {
+            console.log('file added');
+            $('.under-nav button').show();
+        });
+        //Process the upload and initiate the queue
+        var processUpload;
+        $('#startUploadButton').on('click', function ( e ) {
+            console.log('clicked');
+            e.preventDefault();
+            processUpload = setInterval(function(){
+                console.log(myDropzone.getQueuedFiles().length);
+                myDropzone.processQueue()
+            }, 1000);
+        });
+        //stop the interval on finishing the upload
+        myDropzone.on("queuecomplete", function() {
+            console.log(myDropzone.getQueuedFiles().length);
+            clearInterval(processUpload);
+        });
+
+
+
+
+
     });
 }) (jQuery);
 
+//============================================
 //login cover
-
+//============================================
 $(window).load(function() {
 
     var theWindow        = $(window),

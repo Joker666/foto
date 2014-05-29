@@ -305,7 +305,7 @@ require.register("dropzone/lib/dropzone.js", function (exports, module) {
       ignoreHiddenFiles: true,
       acceptedFiles: null,
       acceptedMimeTypes: '.jpg,.png',
-      autoProcessQueue: true,
+      autoProcessQueue: false,
       autoQueue: true,
       addRemoveLinks: true,
       previewsContainer: null,
@@ -1544,7 +1544,7 @@ require.register("dropzone/lib/dropzone.js", function (exports, module) {
     return element.dropzone;
   };
 
-  Dropzone.autoDiscover = true;
+  Dropzone.autoDiscover = false;
 
   Dropzone.discover = function() {
     var checkElements, dropzone, dropzones, _i, _len, _results;
